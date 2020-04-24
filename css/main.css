@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Dosis:300|Roboto&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Josefin+Sans:wght@700&family=Raleway:wght@200&display=swap');
 
 body  {
     margin: 0;
@@ -9,7 +9,10 @@ body  {
     background-image: radial-gradient(#fafafa 5%, transparent 20%);
     background-position: 0 0, 2em, 2em;
     background-size: 1.5em 1.5em;
+
 }
+
+
 
 header  {
     background: rgb(233, 227, 195);
@@ -36,12 +39,25 @@ header  {
     background-color: #ff7f50;
 }
 
-h1, h2   {
-    font-family: 'Roboto', sans-serif;
+h1 {
+    font-family: 'Josefin''sans';
 }
 
-p, ul   {
-    font-family: 'Dosis', sans-serif;
+h2   {
+    font-family: 'Raleway' "bold";
+    color: #ff7f50;
+    padding-left: 1em;
+}
+
+h3 {
+    color: rgb(8, 134, 134);
+    font-family: 'Raleway';
+    padding-bottom: 2em;
+  
+}
+
+p   {
+    font-family: 'Raleway';, sans-serif;
 }
 
 
@@ -77,6 +93,7 @@ p, ul   {
     padding-top: 5em;
     padding-right: 2em;
     position: relative;
+    
 
 }
 
@@ -158,45 +175,50 @@ a.active  {
 
 }
 
-.place {
+
+
+.places {
+    padding-top: 1em;
     display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    place-items: center center;
+    font-family: Raleway;
+    
+}
+
+.place1 {
+    position: relative;
+   
+  
+
+
+}
+
+.place2 {
+    
+}
+
+.place3 {
+    
+}
+
+.place4 {
+    
 }
 
 
-/* 
-@media (min-width: 1025px) {
-    .nav-bar a {
-       
-    
-    
-    }
 
-}   
 
-    
+.bakery {
+    width: 500px;
+    height: 393px;
+}
 
 
 
-@media (min-width: 768px) {
-    .nav-bar a {
-     
-    
-    
-    }
-   
-} 
 
 
-@media (min-width: 500px) { 
-    .nav-bar a {
-      
-    
-    
-    }
-
-    
-
-} 
 
 
 

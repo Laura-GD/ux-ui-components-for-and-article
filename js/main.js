@@ -38,10 +38,10 @@ window.addEventListener("scroll", () => {
 window.onscroll = function() {
    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
    for (i in sections) {
-     if (sections[i] <= scrollPosition + 160) {
+     if (sections[i] <= scrollPosition + 161) {
        document.querySelector('.active').setAttribute('class', '');
        console.log(i);
-       debugger;
+       //debugger;
        document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
      }
    }
