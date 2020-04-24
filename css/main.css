@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300|Roboto&display=swap');
+
+
+
+body  {
+    margin: 0;
+    background-color: rgb(169, 212, 212);
+    background-image: radial-gradient(#fafafa 5%, transparent 20%);
+    background-position: 0 0, 2em, 2em;
+    background-size: 1.5em 1.5em;
+}
+
+header  {
+    background: rgb(233, 227, 195);
+    height: 10em;
+    top: 0;
+    width:100%;
+    z-index:1; 
+    position: fixed;
+
+}
+
+.progress-container {
+    position: fixed;
+    width: 100%;
+    height: 1em;
+    background-color: white;
+    border-bottom: 1em;
+
+}
+
+.progress-fill {
+    width: 0;
+    height: 100%;
+    background-color: #ff7f50;
+}
+
+h1, h2   {
+    font-family: 'Roboto', sans-serif;
+}
+
+p, ul   {
+    font-family: 'Dosis', sans-serif;
+}
+
+
+.logo  {
+    float: left;
+    height: 8em;
+    width: auto;
+    padding: 1em 5em;
+    transform: rotate(360deg);
+    transition-duration: 1s;
+    transition-duration: 2s;
+
+}
+
+.nav-bar  {
+    text-align: center; 
+    z-index: 1; 
+}
+    
+
+
+.nav-bar ul  {
+    list-style-image: -webkit-image-set();
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.nav-bar li {
+    display: inline-block;
+    margin-right: 2em;
+    padding-top: 5em;
+    padding-right: 2em;
+    position: relative;
+
+}
+
+.nav-bar a {
+    color: rgb(8, 134, 134);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+
+.nav-bar a:hover  {
+    color: #ff7f50;
+}
+
+a.active  {
+    color: #ff7f50;
+}
+.content  {
+    background-color: cornsilk;
+    left: 2em;
+    margin: 1em 2em;
+    padding: 1em;
+    color: rgb(8, 134, 134);
+
+}
+
+.carousel  {
+    position: relative;
+    top: 10em;
+    height: 60em;
+    width: 80%;
+    margin: auto;
+}
+
+
+.carousel-image  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    object-fit: cover;
+}
+
+.carousel-container  {
+    position: relative;
+    top: 4em;
+    height: 100%;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.carousel_slide  {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /*left: 11em;*/
+    width: 100%;
+}
+
+.carousel-button-l  {
+    position: absolute;
+    top:40%;
+    background: transparent;
+    border: 0;
+
+}
+
+.carousel-button-r  {
+    position: absolute;
+    top:40%;
+    right: 0;
+    background: transparent;
+    border: 0;
+
+}
+
+
+
+
+/* 
+@media (min-width: 1025px) {
+    .nav-bar a {
+       
+    
+    
+    }
+
+}   
+
+    
+
+
+
+@media (min-width: 768px) {
+    .nav-bar a {
+     
+    
+    
+    }
+   
+} 
+
+
+@media (min-width: 500px) { 
+    .nav-bar a {
+      
+    
+    
+    }
+
+    
+
+} 
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
