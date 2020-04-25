@@ -9,7 +9,7 @@ body  {
     background-image: radial-gradient(#fafafa 5%, transparent 20%);
     background-position: 0 0, 2em, 2em;
     background-size: 1.5em 1.5em;
-
+    font-family: 'Raleway';
 }
 
 
@@ -40,13 +40,14 @@ header  {
 }
 
 h1 {
-    font-family: 'Josefin''sans';
+    font-family: 'Josefin' "bold";
 }
+
 
 h2   {
     font-family: 'Raleway' "bold";
     color: #ff7f50;
-    padding-left: 1em;
+  
 }
 
 h3 {
@@ -56,9 +57,6 @@ h3 {
   
 }
 
-p   {
-    font-family: 'Raleway';, sans-serif;
-}
 
 
 .logo  {
@@ -112,11 +110,13 @@ p   {
 a.active  {
     color: #ff7f50;
 }
+
+
 .content  {
     background-color: cornsilk;
     left: 2em;
     margin: 1em 2em;
-    padding: 1em;
+    padding: 1em 2.5em 1em 2.5em;
     color: rgb(8, 134, 134);
 
 }
@@ -183,37 +183,32 @@ a.active  {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     place-items: center center;
-    font-family: Raleway;
+    font-family: 'Raleway';
     
 }
-
-.place1 {
-    position: relative;
-   
-  
-
-
-}
-
-.place2 {
-    
-}
-
-.place3 {
-    
-}
-
-.place4 {
-    
-}
-
-
 
 
 .bakery {
     width: 500px;
     height: 393px;
 }
+
+
+
+.related {
+    padding-top: 1em;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    place-items: center center;
+    font-family: 'Raleway';
+    
+}
+
+
+
+
+
 
 
 
