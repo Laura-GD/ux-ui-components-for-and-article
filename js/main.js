@@ -35,6 +35,7 @@ window.addEventListener("scroll", () => {
    Array.prototype.forEach.call(section, function(e) {
      sections[e.id] = e.offsetTop;
    });
+
 window.onscroll = function() {
    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
    for (i in sections) {
@@ -51,14 +52,36 @@ window.onscroll = function() {
 
 //Carousel
 
-//select carousel, all images and each image
+
+
+
+
+//select carousel, all images and buttoms
 let carouselCont = document.querySelector('.carousel-container');
 let container =  document.querySelector ('.container');
-
-//Select buttons
 let leftBtn = document.querySelector('.carousel-button-l');
 let rightBtn = document.querySelector('.carousel-button-r');
 
-//
+
+console.log (leftBtn);
+
+//when I click move image 
+  rightBtn.addEventListener('click', e => {
+    let currentI = container.querySelector('.current-Image');
+    let nextI = currentI.nextElementSibling;
+    let iTomove = nextI.style.left;
+
+    console.log(iTomove);
+
+
+
+  })
+
+
+
+
+
+
+
 
 
