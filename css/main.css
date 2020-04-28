@@ -139,7 +139,7 @@ a.active  {
     list-style: none;
 }
 
-.carousel_slide  {
+.slide  {
     position: absolute;
     top: 0;
     bottom: 0;

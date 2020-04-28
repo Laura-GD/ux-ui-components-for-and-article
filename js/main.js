@@ -52,30 +52,69 @@ window.onscroll = function() {
 
 //Carousel
 
-
-
-
-
 //select carousel, all images and buttoms
-let carouselCont = document.querySelector('.carousel-container');
+let carouselCont = document.querySelectorAll('.slide');
 let container =  document.querySelector ('.container');
 let leftBtn = document.querySelector('.carousel-button-l');
 let rightBtn = document.querySelector('.carousel-button-r');
+let currentI = 0;
 
+//function to clear out all images 
+function reset (){
 
-console.log (leftBtn);
+  for(let i= 0; i < carouselCont.length; i++){
+    //hidding all images
+    carouselCont[i].style.display = 'none';
+  }
+}
 
-//when I click move image 
-  rightBtn.addEventListener('click', e => {
-    let currentI = container.querySelector('.current-Image');
-    let nextI = currentI.nextElementSibling;
-    let iTomove = nextI.style.left;
+//function to inicial image
+function startSlide(){
+  reset();
+  //Grag first image
+  carouselCont[0].style.display = 'block';  
+}
 
-    console.log(iTomove);
+//Adding functionality to arrows
 
+//previous image
+function slideLeft(){
+  reset();
+  //take 1 from current image and show 
+  carouselCont[currentI - 1].style.display = 'block';
+  //decreasing current value by 1
+  currentI--;
+}
 
+//left buttom
+leftBtn.addEventListener('click', e  => {
+  //if in 0, we are on the first image
+   if(currentI === 0 ){
+    currentI = carouselCont.length;
+  } 
+   slideLeft()
+ 
+ });
+   startSlide();
 
-  })
+//next image
+function slideRight(){
+  reset();
+  carouselCont[currentI + 1].style.display = 'block';
+  //increasing current by 1
+  currentI++;
+}
+
+//right buttom
+rightBtn.addEventListener('click', e => {
+  //to go back to first image
+   if(currentI === carouselCont.length - 1){
+    currentI = -1;
+  } 
+   slideRight();
+ 
+ });
+
 
 
 
